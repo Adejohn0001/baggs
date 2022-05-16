@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    margin-bottom: 7em;
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid rgb(241, 25, 115);
+}
+.logo{
+    margin: .5rem;
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style-type: none;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li:hover{
+    background-color: rgb(241, 25, 115);
+
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin-top: 10px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.registrationform{
+    margin-top: 8em;
+    background-color:rgb(241, 25, 115);
+    border: 200px solid black;
+    padding: 40px 60px 0px;
+}
+
+#exampleInputUsername, #exampleInputEmail1, #exampleInputPassword1 {
+    width: 100%;
+}
+
+#exampleInputPassword1 #exampleInputPassword2{
+    font-size: 150px;
+    letter-spacing: 5px;
+}
+
+p{
+    color: rgb(187, 186, 186);
+    background-color: beige;
+    border: 3px solid black;
+    padding: 1px 5px;
+    margin-top: 1em;
+    font-weight: 500;
+}
+.whiteicons{
+    color:white;
+    margin-bottom: -49px;
+    cursor:default;
+}
+
+i{
+    color: black;
+}
+.flexpsw-icon{
+    display: flex;
+}
+.pswIcon{
+    margin-left: -45px;
+    cursor: pointer;
+}
+.alert{
+    display: flex;
+    align-items: center;
+}
+
+#exclamationSymbol{
+    color: red;
+    display: none;
+    background-color: beige;
+    cursor: pointer;
+}
+.material-symbols-outlined{
+    margin-top: 8px;
+}
+.btn{
+    margin: 2em 0em 3em;
+    padding:0px 40px;
+    width: 100%;
+    height: 1000%;
+    border-color: white;
+    background-color: black;
+    color: white;
+}
+#btn:hover{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+hr{
+    background-color: rgb(241, 25, 115);
+    opacity: 1.0;
+    padding-top: 2px;
+}
+
+
+@media (max-width: 768px) {
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    
+}
+
+
+
+@media  (max-width: 664px) {
+    .registrationform{
+        margin-top: 8em;
+        background-color:rgb(241, 25, 115);
+        border: 2px solid black;
+        padding: 40px 60px 0px;
+    }
+}
